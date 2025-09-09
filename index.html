@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sarathi NM project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sarathi | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body { font-family: 'Roboto', sans-serif; background: linear-gradient(to right, #f8b500, #fceabb); color: #333; }
+
+    a { text-decoration: none; color: inherit; }
+
+    header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(to bottom, #ffafbd, #ffc3a0); animation: fadeIn 2s; }
+
+    header h1 { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ff4b2b; text-shadow: 2px 2px #fff; }
+
+    header p { font-size: 1.5rem; margin-top: 10px; color: #fff; }
+
+    .profile-pic { 
+
+      width: 200px; 
+
+      height: 200px; 
+
+      border-radius: 50%; 
+
+      margin: 20px auto; 
+
+      border: 5px solid #fff; 
+
+      object-fit: cover;
+
+      box-shadow: 0 0 30px #ff4b2b, 0 0 60px #ff6f61, 0 0 90px #ff4b2b; 
+
+    }
+
+    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+
+    section h2 { font-size: 2.5rem; color: #ff4b2b; margin-bottom: 30px; text-align: center; position: relative; }
+
+    section h2::after { content: ''; display: block; width: 80px; height: 4px; background: #ff4b2b; margin: 10px auto 0; border-radius: 2px; }
+
+    .about p, .about li { margin-bottom: 15px; line-height: 1.6; }
+
+    .about ul { padding-left: 20px; }
+
+    .skills { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+
+    .skill-card { background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; transition: transform 0.3s; }
+
+    .skill-card:hover { transform: translateY(-10px); }
+
+    .skill-card h3 { color: #ff4b2b; margin-bottom: 10px; }
+
+    .skill-card p { font-size: 0.95rem; line-height: 1.5; }
+
+    .projects { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+
+    .projects a { color: #fff; background: #ff4b2b; padding: 12px 20px; border-radius: 10px; font-weight: bold; transition: 0.3s; }
+
+    .projects a:hover { background: #ff6f61; }
+
+    .contact form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+
+    .contact input, .contact textarea { padding: 12px; border-radius: 10px; border: 1px solid #ccc; font-size: 1rem; }
+
+    .contact button { padding: 15px; border-radius: 10px; border: none; background: #ff4b2b; color: #fff; font-size: 1.1rem; cursor: pointer; transition: 0.3s; }
+
+    .contact button:hover { background: #ff6f61; }
+
+    nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.9); display: flex; justify-content: center; padding: 10px 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+    nav a { margin: 0 15px; font-weight: bold; color: #ff4b2b; transition: 0.3s; }
+
+    nav a:hover { color: #ff6f61; }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    @media(max-width: 768px) { .skills { flex-direction: column; align-items: center; } }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#skills">Skills</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <!-- Home Section -->
+
+  <header id="home">
+
+    <img src="sarathi.jpg" alt="sarathi E" class="profile-pic">
+
+    <h1>Sarathi E</h1>
+
+    <p>Welcome to my profile! ✨</p>
+
+  </header>
+
+  <!-- About Section -->
+
+  <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <p><strong>Name:</strong> Sarathi E</p>
+
+    <p><strong>Department:</strong> BCA Computer Application</p>
+
+    <p><strong>College:</strong> Merit Haji Ismail Sahib Arts and Science College</p>
+
+    <p><strong>University:</strong> Thiruvalluvar University, Vellore</p>
+
+    <p><strong>Roll No:</strong> 36624U09038</p>
+
+    <p><strong>Email:</strong> sarathifreaky@gmai.com</p>
+
+    <h3>About Me Highlights:</h3>
+
+    <ul>
+
+      <li>Passionate Computer Application student with strong interest in Web Development 🌐</li>
+
+      <li>Good knowledge in HTML, CSS, JavaScript, Python, and C++ ⚡</li>
+
+      <li>Dream to become a Full Stack Web Developer 🚀</li>
+
+      <li>Love building dynamic, user-friendly websites ✨</li>
+
+    </ul>
+
+  </section>
+
+  <!-- Skills Section -->
+
+  <section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill-card">
+
+        <h3>Python</h3>
+
+        <p>Proficient in writing efficient and structured code. Experienced in data analysis, machine learning, and web development using libraries like NumPy, Pandas, scikit-learn.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <h3>C++</h3>
+
+        <p>Strong understanding of OOP, templates, memory management, data structures, algorithms, and STL implementation.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <h3>HTML & Web Dev</h3>
+
+        <p>Proficient in HTML5, CSS, JavaScript with semantic markup, accessibility, and responsive design. Built multiple web pages and applications.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <h3>Data Structures & Algorithms</h3>
+
+        <p>Knowledge in arrays, linked lists, stacks, queues, trees, graphs, sorting & searching algorithms, and problem-solving techniques.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <a href="https://github.com/sarathifreaky-netizen/TNSDC-FWD-DigitalPortfolio.git" target="_blank">Visit My GitHub Projects</a>
+
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact">
+
+      <form onsubmit="submitForm(event)">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    function submitForm(e) {
+
+      e.preventDefault();
+
+      alert('Thank you for contacting me! I will get back to you soon.');
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
